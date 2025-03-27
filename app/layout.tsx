@@ -4,6 +4,7 @@ import Navbar from '@/components/ui/Navbar';
 import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
+import SupabaseAuth from '@/components/ui/SupabaseAuth';
 import 'styles/main.css';
 
 const title = 'Next.js Subscription Starter';
@@ -34,6 +35,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
         <Suspense>
           <Toaster />
         </Suspense>
+        <SupabaseAuth />
       </body>
     </html>
   );
